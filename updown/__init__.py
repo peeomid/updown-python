@@ -63,7 +63,7 @@ class Check:
     @staticmethod
     def _fromObject(obj):
         c = Check(obj['url'])
-        for attr, value in obj.iteritems():
+        for attr, value in obj.items():
             setattr(c, attr, value)
         return c
 
